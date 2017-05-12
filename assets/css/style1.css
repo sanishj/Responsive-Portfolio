@@ -1,0 +1,317 @@
+/* Color Palette
+Teal color (used for headings and backgrounds): #4aaaa5
+Regular font color (used for paragraphs and all text besides the headings): #777777
+Main header background color: #ffffff
+Main header border color: #cccccc
+Footer background color: #666666
+Main content background color: #ffffff
+Main content border color: #dddddd
+*/
+
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    margin: 0;
+    color: #777777;
+    background: #f1f1f1;
+    font-size: 18px;
+    line-height: 1.7em;
+}
+
+.flex-container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    /*border: 1px solid red;*/
+    background: #ffffff;
+}
+
+.flex-item0 {
+    line-height: 100px;
+    text-decoration: none;
+    flex-grow: 2;
+}
+
+.flex-item {
+    background: #4AAAA5;
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    flex-grow: 1;
+}
+
+.flex-item2 {
+    line-height: 100px;
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+    flex-grow: 2;
+    font-size: 24px;
+}
+
+.flex-item2:hover {
+    /*background: darken(#4AAAA5, 2%);*/
+    background: #4AAAA5;
+    color: white;
+}
+
+.flex-item3 {
+    /*border: 1px solid red;*/
+    width: 50px;
+    height: 50px;
+}
+
+
+/*header*/
+
+.hdr {
+    background: #ffffff;
+    margin: 0 auto;
+    padding: 0;
+    border-bottom: 2px solid #cccccc;
+}
+
+.content {
+    background: #ffffff;
+    max-width: 980px;
+    margin: 10px auto;
+    padding: 0;
+}
+
+.aboutme {
+    max-width: 75%;
+    margin: 25px auto;
+    padding: 20px;
+    background: #ffffff;
+    float: left;
+    border: 1px solid #cccccc;
+}
+
+
+
+
+/*test area*/
+
+.floatcontainer {
+    max-width: 100%;
+    background: #ffffff;
+    float: left;
+}
+
+
+
+
+.connect {
+    max-width: 25%;
+    margin: 25px auto;
+    padding: 20px;
+    background: #ffffff;
+    float: right;
+    border: 1px solid #cccccc;
+}
+
+h2 {
+    color: #4AAAA5;
+    font-size: 24px;
+    border-bottom: 2px solid #cccccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    /*border: 5px solid red;*/
+}
+
+
+/*Contact Area CSS Start*/
+
+h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-top: .8em;
+    font-weight: 400;
+    /*border: 5px solid red;*/
+    padding: 0;
+    border: 0;
+}
+
+.form-control {
+    border: 2px solid #cccccc;
+    font-size: 14px;
+    line-height: 1.467;
+    padding: 4px;
+    height: 42px;
+}
+
+input,
+textarea {
+    transition: all 800ms;
+    resize: none;
+    /* removes the resize handle */
+    overflow: auto;
+    /* removes default scrolling bars in IE */
+    outline: none;
+    font-family: inherit;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 4px;
+    color: #777777;
+    margin-top: 1.25em;
+}
+
+textarea.form-control {
+    height: 200px;
+}
+
+.btn-primary {
+    box-shadow: 0;
+    border: none;
+    background-color: #4AAAA5;
+    color: #ffffff;
+    padding: 10px 19px;
+    font-size: 16px;
+    line-height: 1.471;
+    width: 20%;
+    border-radius: 3px;
+    margin-top: 1.44em;
+    margin-bottom: .55em;
+}
+
+.form-group {
+    width: inherit margin: 5px;
+}
+
+.form {
+    background: #ffffff;
+    width: 680px;
+}
+
+
+/*Contact Area CSS End*/
+
+
+/*Portfolio Area CSS start*/
+
+.relative {
+    position: relative;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+.fl-l {
+    float: left;
+}
+
+.fl-r {
+    float: right;
+}
+
+.img-left {
+    position: relative;
+    width: 220px;
+    height: auto;
+    border-radius: 5%;
+    border: 3px solid #4AAAA5;
+}
+
+.img-right {
+    position: relative;
+    width: 220px;
+    height: auto;
+    border-radius: 5%;
+    border: 3px solid #4AAAA5;
+}
+
+.overlay-txt {
+    position: absolute;
+    bottom: 0;
+    background: #4AAAA5;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*Portfolio Area CSS End*/
+
+
+/*footer*/
+
+
+
+/*media files*/
+
+@media (min-width: 769px) and (max-width: 980px) {
+    .profile-img {
+    width: 300px;
+    margin: 10px;
+    border: 2px solid #4AAAA5;
+    }
+    .floated {
+    margin: 5px;
+    text-align: center;
+    border: 5px solid red;
+    }
+    .oh {
+    margin: 0;
+    padding: 10px;
+    border: 5px solid red;
+    }
+    .footer {
+    clear: both;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #666666;
+    border-top: 10px solid #4AAAA5;
+    height: 100px;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    padding-top: 40px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+
+}    
+
+@media (min-width: 981px) {
+    .profile-img {
+    clear: both;
+    border-radius: 50%;
+    width: 200px;
+    border: 2px solid #4AAAA5;
+    }
+    .floated {
+    float: left;
+    margin: 5px;
+    }
+    .oh {
+    margin: 0;
+    text-align: left;
+    padding: 10px;
+    }
+    .footer {
+    clear: both;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #666666;
+    border-top: 10px solid #4AAAA5;
+    height: 100px;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    padding-top: 40px;
+    }
+}
